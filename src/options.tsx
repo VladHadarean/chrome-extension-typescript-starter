@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
-
 const Options = () => {
   const [color, setColor] = useState<string>("");
   const [status, setStatus] = useState<string>("");
@@ -42,7 +41,8 @@ const Options = () => {
   return (
     <>
       <div>
-        Favorite color: <select
+        Favorite color:{" "}
+        <select
           value={color}
           onChange={(event) => setColor(event.target.value)}
         >
